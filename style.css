@@ -1,0 +1,983 @@
+/*!
+Theme Name: Lindsay Almond Glass & Aluminium
+Theme URI: http://underscores.me/
+Author: G Baskaran
+Author URI: http://underscores.me/
+Description: Home Improvement Business
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain: lindsay-almond-glass-aluminium
+Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+
+Lindsay Almond Glass & Aluminium is based on Underscores https://underscores.me/, (C) 2012-2017 Automattic, Inc.
+Underscores is distributed under the terms of the GNU GPL v2 or later.
+
+Normalizing styles have been helped along thanks to the fine work of
+Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
+*/
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+# Core
+# Typography
+# Elements
+# Forms
+# Navigation
+	## Links
+	## Menus
+# Accessibility
+# Alignments
+# Clearings
+# Widgets
+# Content
+	## Posts and pages
+	## Comments
+# Infinite scroll
+# Media
+	## Captions
+	## Galleries
+	--------------------------------------------------------------*/
+
+/* COLORS
+--------------------------------------------- */
+
+/*  
+Dark Gray: #707070
+LAlmond Mid Blue: #F0F7F7;
+LAlmond Brand Blue: #168CC7
+Littlhubs White: #FAFAFA*/
+
+/*--------------------------------------------------------------
+# Core
+--------------------------------------------------------------*/
+
+html {
+	line-height: 1.15; /* 1 */
+	-webkit-text-size-adjust: 100%; /* 2 */
+}
+
+body {
+	font-family: Arial;
+	color: #707070;
+	margin: 0;
+	padding: 0;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	color: #168CC7;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #707070;
+}
+
+ /*--------------------------------------------------------------
+# Headings
+--------------------------------------------------------------*/
+.window h2 {
+	font-size: 34px;
+	padding: 0px;
+	line-height: 40px
+}
+
+ /*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+header {
+	background-color: white;
+	padding: 10px;
+	border-bottom: 3px solid #168CC7;
+}
+
+#headerContainer {
+	text-align: center;
+}
+
+header .header-left img {
+	height: 60px;
+	width: auto;
+}
+
+
+header small {
+	color: #707070;
+	margin-left: 1px;
+	font-size: 13px;
+}
+
+header .header-right {
+	float: right;
+}
+
+header .header-right input[type="text"] {
+	width: 250px;
+	padding: 5px;
+	height: 25px;
+	border: 1px solid #168CC7;
+}
+
+/*--------------------------------------------------------------
+# Core Classes
+--------------------------------------------------------------*/
+
+.container {
+	margin: auto;
+	overflow: auto;
+	width: 90%;
+}
+
+.button {
+	background-color: #168CC7;
+	color: whitesmoke;
+	padding: 8px;
+	display: inline-block;
+}
+
+.content {
+	margin-top: 30px;
+	line-height: 1.5em;
+}
+
+.main {
+	float: left;
+}
+
+.sidebar {
+	margin: 0 auto;
+	width: 90%;
+}
+
+.block {
+	border: 1px solid #707070;
+	padding: 5px 15px 25px 15px;
+	background-color: #FCFCFC;
+	overflow: hidden;
+}
+
+#frontPage .about-us .block {
+	background-color: white;
+}
+
+
+.block h3 {
+	border-bottom: 1px solid #707070;
+	padding-bottom: 8px;
+}
+
+.block p {
+	margin: auto;
+	padding: 8px 0;
+}
+
+.clr {
+	clear: both;
+}
+
+
+/*--------------------------------------------------------------
+# Navigation Bar
+--------------------------------------------------------------*/
+nav.navigation li {
+	display: inline;
+	padding-right: 15px;
+}
+
+nav.navigation a {
+	text-decoration: none;
+}
+
+nav.main-navigation {
+	height: auto;
+	overflow: hidden;
+	background-color: #707070;
+	color: #168CC7;
+	display: grid;
+	grid-template-columns: 1fr 12fr 1fr;
+	grid-template-areas: ". mainNav .";
+}
+
+nav.main-navigation .container {
+	grid-area: mainNav;
+}
+
+nav.main-navigation li {
+	height: 40px;
+	line-height: 40px;
+}
+
+nav.main-navigation a {
+	color: white;
+	text-decoration: none;
+	padding: 8px;
+}
+
+nav.main-navigation a:hover {
+	color: #168CC7;
+}
+
+.menu-primary-container {
+	text-align: center;
+}
+/*--------------------------------------------------------------
+# Sub Navigation Bar
+--------------------------------------------------------------*/
+
+.sub-nav {
+	margin-top: 8px;
+	float: right;
+	width: auto;
+}
+
+.sub-nav ul {
+	float: right;
+}
+
+.sub-nav li {
+	padding: 8px;
+	float: left;
+}
+
+.sub-nav .parent-link {
+	font-weight: bold;
+	color: #168CC7;
+	float: left;
+	padding: 8px;
+	border-right: 1px solid #707070;
+}
+
+.sub-nav .parent-link a {
+	font-weight: bold;
+	color: #707070;
+}
+
+.sub-nav .current_page_item {
+	font-weight: bold;
+}
+
+
+
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+
+footer {
+	margin-top: 32px;
+	background-color: #707070;
+}
+
+footer.main-footer a {
+	color: whitesmoke;
+	line-height: 24px;
+	text-decoration: none;
+}
+
+footer.main-footer a:hover {
+	color: #168CC7;
+}
+
+footer.main-footer ul {
+	display: inline;
+}
+
+
+
+#mainFooterContainer {
+	text-align: center;
+	display: grid;
+	grid-template-rows: auto auto auto auto auto;
+	grid-template-areas: 
+	"mainFooterSectionOne"
+	"mainFooterSectionTwo"
+	"mainFooterSectionThree"
+	"mainFooterSectionFour"
+	"mainFooterSectionFive";
+	padding: 32px 8px;
+
+}
+
+#mainFooterSectionOne {
+	grid-area: mainFooterSectionOne;
+	height: 30px;
+	display: none;
+}
+
+#mainFooterSectionTwo {
+	grid-area: mainFooterSectionTwo;
+}
+
+#mainFooterSectionThree {
+	grid-area: mainFooterSectionThree;
+	height: 30px;
+	color: whitesmoke;
+}
+
+#mainFooterSectionFour {
+	grid-area: mainFooterSectionFour;
+	height: 30px;
+	display: none;
+}
+}
+
+#mainFooterSectionFive {
+	grid-area: mainFooterSectionFive;
+	height: 30px;
+	display: none;
+}
+
+
+
+/*--------------------------------------------------------------
+# Core - Product Index
+--------------------------------------------------------------*/
+
+.content {
+	display: grid;
+	grid-template-rows: auto auto;
+	grid-template-areas: 
+	"main"
+	"sidebar";
+	grid-gap: 16px;
+}
+
+.content .main {
+	grid-area: main;
+}
+
+.content .sidebar {
+	grid-area: sidebar;
+}
+
+article .post-thumbnail img {
+	width: 100%;
+	height: auto;
+}
+
+article .about-thumbnail img {
+	width: 300px;
+	height: 300px;
+	border-radius: 150px;
+	object-fit: cover;
+	float: right;
+	margin: 32px;
+
+	
+}
+
+
+/*--------------------------------------------------------------
+# Archive
+--------------------------------------------------------------*/
+.archive-post a {
+	color: #168CC7;
+}
+
+.archive-post a:hover {
+	color: #707070;
+}
+
+.page-header {
+	line-height: 40px;
+}
+
+/*--------------------------------------------------------------
+# Core - Product Index - Article
+--------------------------------------------------------------*/
+article.post {
+	border-bottom: 1px solid #707070;
+	margin-bottom: 8px;
+	padding-bottom: 16px;
+}
+
+article.post .meta {
+	background-color: #F0F7F7;
+	color:#707070;
+	padding: 8px;
+}
+
+article.post .meta a {
+	color: #168CC7;
+}
+
+article.post .meta a:hover {
+	color: #707070;
+}
+
+article.post-aside small {
+	font-weight: bolder;
+}
+
+article.post-aside .well {
+	background-color: #F0F7F7;
+	padding: 8px;
+}
+
+article.post-link a {
+	color: #168CC7;
+}
+
+article.post-link a:hover {
+	color: #707070;
+}
+
+article.post-gallery{
+	background-color: #FAFAFA;
+	color:#707070;
+	width: 100%;
+	float: right;
+	align-items: center;
+
+}
+
+article.post-gallery h2{
+	padding: 8px;
+	margin: auto;
+}
+
+article.post-gallery .gallery-icon {
+	padding:8px;
+	float: left;
+
+}
+
+article.post-gallery .gallery-icon img {
+	width: 100%;
+	height: auto;
+
+}
+
+
+
+.gallery {
+	display: inline-block;
+}
+
+/*--------------------------------------------------------------
+# Side Widget
+--------------------------------------------------------------*/
+.side-widget {
+	margin-bottom: 16px;
+}
+
+.side-widget li {
+	list-style: none;
+	line-height: 2.1em;
+	border-bottom: 1px dotted #707070;
+}
+
+/*--------------------------------------------------------------
+# Items Index
+--------------------------------------------------------------*/
+.item {
+	display: grid;
+	grid-template-rows: auto auto;
+	grid-template-areas: 
+	"itemShowcase"
+	"itemContent";
+}
+
+.item .showcase {
+	grid-area: itemShowcase;
+	width: 100%;
+}
+
+.item .block {
+	grid-area: itemContent;
+}
+
+.item-single {
+	display: grid;
+	grid-template-rows: auto auto;
+	grid-template-areas: 
+	"itemSingleShowcase"
+	"itemSingleContent";
+}
+
+.item-single .showcase {
+	grid-area: itemSingleShowcase;
+}
+
+.item-single .block {
+	grid-area: itemSingleContent;
+}
+
+
+/*--------------------------------------------------------------
+# Icons
+--------------------------------------------------------------*/
+i {
+	color: black;
+
+}
+
+.fa {
+	font-size: 32px;
+}
+
+/*--------------------------------------------------------------
+# Showcase
+--------------------------------------------------------------*/
+.showcase {
+	display: grid;
+	grid-template-columns: 1fr 12fr 1fr;
+	grid-template-areas: 
+	"showcaseLeft showcaseStage showcaseRight";
+	height: 300px;
+	padding:16px 0;
+}
+
+.showcase .showcase-stage {
+	grid-area: showcaseStage;
+}
+
+.showcase-image, 
+.full-showcase-image {
+	height: 100%;
+	overflow: hidden;
+}
+
+
+
+.showcase .showcase-stage {
+	height: 100%;
+	width: 100%;
+	border: none;
+	overflow: hidden;
+}
+
+
+.showcase .left-indicator {
+	grid-area: showcaseLeft;
+	padding: 4px;
+	margin: auto;
+	z-index: 0;
+	cursor: pointer;
+	opacity: .5;
+}
+
+.showcase .right-indicator {
+	grid-area: showcaseRight;
+	padding: 4px;
+	margin: auto;
+	z-index: 0;
+	cursor: pointer;
+	opacity: .5;
+
+}
+
+.slide {
+	display: none;
+	position: relative;
+	width: 100%;
+	height: inherit;
+}
+
+.slide.active {
+	display: block;
+}
+
+.slide:nth-child(odd){
+	background-color: green;
+}
+
+.slide:nth-child(even){
+	background-color: red;
+}
+
+#windowsShowcaseRightTwo {
+	cursor: pointer;
+}
+
+
+
+/*--------------------------------------------------------------
+# Front Page
+--------------------------------------------------------------*/
+#frontPage {
+	width: 100%;
+	display: grid;
+	grid-template-columns: auto;
+	grid-template-rows: auto auto auto auto;
+	grid-template-areas: 
+	"frontPageShowcase"
+	"frontPageAboutUs"
+	"frontPageOurRange"
+	"frontPageSidebar";
+}
+
+
+/*--------------------------------------------------------------
+# Front Page - Full Showcase
+--------------------------------------------------------------*/
+
+.full-showcase {
+	grid-area: frontPageShowcase;
+	display:grid;
+	grid-template-columns: auto 1fr auto;
+	grid-template-areas: "frontPageLeft frontPageShowcaseStage frontPageRight";
+}
+
+.full-showcase .showcase-stage {
+	grid-area: frontPageShowcaseStage;
+	height: 70vh;
+	width: 100vw;
+	margin-left: -55.0px;
+	margin-right: -56.5px;
+
+}
+
+
+.full-showcase .left-indicator {
+	grid-area: frontPageLeft;
+	padding: 16px;
+	margin: auto;
+	z-index: 0;
+	cursor: pointer;
+	opacity: .5;
+}
+
+.full-showcase .right-indicator {
+	grid-area: frontPageRight;
+	padding: 16px;
+	margin: auto;
+	z-index: 0;
+	cursor: pointer;
+	opacity: .5;
+}
+
+.full-showcase .showcase-stage img {
+	height: 100%;
+	width: 100%;
+	border: none;
+}
+
+
+/*--------------------------------------------------------------
+# Front Page - About Us 
+--------------------------------------------------------------*/
+#frontPage .about-us {
+	grid-template-areas: frontPageAboutUs;
+	border: 1px solid #168CC7;
+	margin: 32px auto;
+}
+
+.about-us.container .block {
+	grid-area: aboutUsExcerpt;
+	border: none;
+
+}
+
+.about-us.container .block h1 {
+	font-size: 32px;
+	text-align: left;
+	padding: 0;
+	margin: 8px auto;
+	color: #168CC7;
+}
+
+.about-us.container .block ul > li {
+	color: #168CC7;
+	margin: 0 16px;
+	font-size: 16px;
+}
+
+/*--------------------------------------------------------------
+# Front Page - About Us Address Box
+--------------------------------------------------------------*/
+#addressBox {
+	grid-area: addressBox;
+	text-align: center;
+	border: none;
+
+}
+
+#addressBox iframe {
+	padding: 8px;
+}
+
+#addressBox p {
+	color: #168CC7;
+}
+
+#addressBox h2 {
+	font-size: 24px;
+	padding: 0;
+	margin: 8px auto;
+	color: #168CC7;
+}
+
+/*--------------------------------------------------------------
+# Front Page - Our Range
+--------------------------------------------------------------*/
+#frontPageOurRange {
+	grid-area: frontPageOurRange;
+	display: grid;
+	grid-template-rows: 100px auto auto auto auto;
+	grid-template-areas: 
+	"ourRangeTitle"
+	"ourRangeWindow"
+	"ourRangeDoor"
+	"ourRangeComm"
+	"ourRangeOther";
+	text-align: center;
+	border: none;
+}
+
+#frontPageOurRange img {
+	height: 120px;
+	width: 120px;
+	border-radius: 60px;
+	background-color: lightGray;
+	margin: 16px auto;
+	cursor: pointer;
+
+}
+
+#frontPageOurRange h4 {
+	font-weight: bold;
+	cursor: pointer;
+}
+
+#frontPageOurRange .block {
+	vertical-align: middle;
+	border: none;
+}
+
+
+#ourRangeTitle {
+	grid-area: ourRangeTitle;
+	background-color: white;
+}
+
+#ourRangeWindow {
+	grid-area: ourRangeWindow;
+	background-color: white;
+}
+
+#ourRangeDoor {
+	grid-area: ourRangeDoor;
+	background-color: white;
+}
+
+#ourRangeComm {
+	grid-area: ourRangeComm;
+	background-color: white;
+}
+
+#ourRangeOther {
+	grid-area: ourRangeOther;
+	background-color: white;
+}
+
+
+#frontPageSidebar {
+	grid-area: frontPageSidebar;
+	margin: 32px auto;
+	width: 90%;
+}
+
+
+/*--------------------------------------------------------------
+# Custom Windows Page Main
+-----------------------------------------*/
+#customWindowsPage {
+	display: grid;
+	grid-template-rows: auto auto;
+	grid-template-areas: 
+	"cw_listPage"
+	"cw_sidebar";
+}
+
+#customWindowsPage .list-page {
+	grid-area: cw_listPage;
+}
+
+#customWindowsPageSidebar {
+	grid-area: cw_sidebar;
+}
+
+.list-page {
+	display: grid;
+	grid-template-rows: 200px auto;
+	grid-template-areas: 
+	"pageSubNav"
+	"pageItemsList";
+}
+
+.list-page .page-sub-nav {
+	grid-area: pageSubNav;
+	margin: auto;
+}
+
+
+.list-page .page-items-list {
+	grid-area: pageItemsList;
+}
+
+
+
+
+@media only screen and (min-width: 601px) {
+	
+	body {
+		background-color: white;
+	}
+
+	.gallery {
+		display: unset;
+		
+	}
+
+	.gallery-item {
+		margin-left: 11%;
+	}
+	
+
+}
+
+@media only screen and (min-width: 901px) {
+	
+	body {
+		background-color: white;
+	}
+
+	/*--------------------------------------------------------------
+	# Core - Product Index
+	--------------------------------------------------------------*/
+
+	.content {
+		display: grid;
+		grid-template-columns: 7fr 3fr;
+		grid-template-areas: 
+		"main sidebar";
+		grid-gap: 16px;
+	}
+
+	/*--------------------------------------------------------------
+    # Items Index
+    --------------------------------------------------------------*/
+    .item {
+    	grid-template-rows: auto;
+    	grid-template-columns: 1fr 1fr;
+    	grid-template-areas: 
+    	"itemShowcase itemContent";
+    }
+
+
+
+	/*--------------------------------------------------------------
+	# Footer
+	--------------------------------------------------------------*/
+	#mainFooterContainer {
+		text-align: center;
+		display: grid;
+		grid-template-rows: auto 10vh;
+		grid-template-columns: 16px 3fr 3fr 3fr 16px;
+		grid-template-areas: 
+		"mainFooterSectionOne mainFooterSectionTwo . mainFooterSectionFour mainFooterSectionFive"
+		". . mainFooterSectionThree . .";
+		padding: 32px 8px;
+
+	}
+
+
+
+	/*--------------------------------------------------------------
+	# Front Page - Our Range
+	--------------------------------------------------------------*/
+	#frontPageOurRange {
+		display: grid;
+		grid-template-rows: 100px auto;
+		grid-template-columns: 1fr 2fr 2fr 2fr 2fr 1fr;
+		grid-template-areas: 
+		". . ourRangeTitle ourRangeTitle . ."
+		". ourRangeWindow ourRangeDoor ourRangeComm ourRangeOther .";
+		text-align: center;
+		margin: auto;
+	}
+
+}
+
+@media only screen and (min-width: 1280px) {
+	/*--------------------------------------------------------------
+	# Front Page
+	--------------------------------------------------------------*/
+	#frontPage {
+		grid-template-columns:6fr 3fr;
+		grid-template-rows: auto auto auto auto;
+		grid-template-areas: 
+		"frontPageShowcase frontPageShowcase"
+		"frontPageAboutUs frontPageSidebar"
+		"frontPageOurRange frontPageSidebar"
+		". frontPageSidebar";
+	}
+
+	#frontPageSidebar {
+		margin: 32px auto;
+		width: 80%;
+	}
+
+	/*--------------------------------------------------------------
+	# Front Page - About Us
+	--------------------------------------------------------------*/
+	.about-us.container .block {
+		margin: 16px auto;
+	}
+
+	#addressBox {
+		text-align: center;
+		border-left: 8px solid #168CC7;
+		margin: 16px auto;
+	}
+
+	#frontPageOurRange {
+		grid-template-rows: 100px auto;
+		margin: 8px auto;
+	}
+
+	#customWindowsPage {
+		grid-template-columns: 6fr 3fr;
+		grid-template-rows: auto auto;
+		grid-template-areas: 
+		"cw_listPage cw_sidebar";
+	}
+
+	#frontPage .about-us {
+		margin: auto;
+		border: none;
+	}
+
+	.about-us.container .block h1 {
+		font-size: 40px;
+		text-align: left;
+		padding: 32px 0;
+		margin: 8px auto;
+		color: #168CC7;
+		border-bottom: 3px solid #707070;
+	}
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

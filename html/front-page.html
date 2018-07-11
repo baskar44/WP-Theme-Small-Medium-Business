@@ -1,0 +1,240 @@
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Home Page</title>	
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+	<!-- Custom CSS -->
+	<link rel="stylesheet" href="../style.css">
+
+	<!-- Fontawesome -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<!-- Google fonts -->
+	<link href='https://fonts.googleapis.com/css?family=Karla' rel='stylesheet'>
+
+	<!-- Circular Font -->
+	<link rel="stylesheet" href="../fonts/style.css">
+
+	<!-- AJAX -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	
+	<!-- JQuery -->
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="crossorigin="anonymous">
+	</script>
+
+</head>
+
+<body>
+
+	<header>
+		<!-- Navigation Bar -->
+		<nav class="navbar navbar-expand-md navbar-light fixed-top">
+
+			<!-- Creating reponsive navigation bar -->
+			<div class="nav-responsive-button">
+				<button class="navbar-toggler" data-toggle="collapse" data-target="#collapse_target"><span class="navbar-toggler-icon"></span></button>
+			</div>
+
+
+			<!-- Company Logo-->
+			<div class="navbar-brand">
+				<a href="#"> 
+					<img src="../img/logo.png"> 
+				</a>
+			</div>
+
+
+			<div class="collapse navbar-collapse" id="collapse_target"> 
+
+
+				<!-- Navigation items -->
+				<ul class="navbar-nav">
+
+					<!-- 1) After School -->
+					<li class="nav-item">
+						<a class="nav-link" href="#">Our Range
+							<span class="caret"></span>
+						</a>
+					</li>
+
+					<!-- 2) Child care sharing -->
+					<li class="nav-item">
+						<a class="nav-link" href="#">About us</a>
+					</li>
+
+					<!-- 2) FAQ -->
+					<li class="nav-item">
+						<a class="nav-link" href="#">Contact us</a>
+					</li>
+
+					<!-- 3) News -->
+					<li class="nav-item">
+						<a class="nav-link" href="#">Blog</a>
+					</li>
+				</ul>
+			</div>
+		</nav><!-- / Navigation Bar -->	
+	</header>
+	
+	<div id="homePage" class="page">
+		<!-- Main Carousel -->
+		<div id="mainCarousel" class="carousel">
+			<!-- Left Arrow -->
+			<div class="indicator" id="mainCarousel_left">
+				<i class="fa fa-arrow-left"></i>
+			</div>
+
+			<!-- Right Arrow -->
+			<div class="indicator" id="mainCarousel_right">
+				<i class="fa fa-arrow-right"></i>
+			</div>
+			
+			<!-- Content -->
+			<div class="slider" id="mainCarouselSlider">
+				
+				<div class="mainCarouselImage slide active">
+					<img src="../img/backyardmosman.png">
+				</div>
+				<div class="mainCarouselImage slide"></div>
+				<div class="mainCarouselImage slide"></div>
+				<div class="mainCarouselImage slide"></div>				
+			</div>
+		</div>
+		
+		<div id="introWrapper" class="wrapper">
+			
+			<!-- Address Box -->
+			<div id="addressBox" class="box address-box">
+
+				<div id="addressBoxContent" class="content">
+					<h1>9542 8255</h1>
+					<a><p>sales@lindsayalmondwindows.com.au</p></a>		
+				</div>
+
+				<div id="addressBoxLocation" class="location-map">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3306.502222069471!2d151.13032495078158!3d-34.030986134830854!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b12b806fcc00e4d%3A0xb262dfe7a61c7e44!2sUnit+3+Block+2%2F22+Northumberland+Rd%2C+Caringbah+NSW+2229!5e0!3m2!1sen!2sau!4v1529209031848" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+				</div>
+			</div>
+
+			<div id="aboutUsBox" class="box">
+				<h1>LINDSAY ALMOND GLASS 
+				& ALUMINIUM</h1>
+				<p>
+					We architecturally design, manufacture and install 
+					high quality custom made Commercial Grade
+					Aluminium Windows & Doors, using only the 
+					finest quality materials and architectural hardware.
+				</p>
+				<a><button>ABOUT US</button></a>
+				<a><button>CONTACT US</button></a>
+			</div>
+		</div>
+
+
+		<div id="ourRangeWrapper" class="wrapper">
+			<div id="ourRangeHeader" class="sub-header">
+				<h1>OUR RANGE</h1>
+			</div>
+
+			<div id="ourRangeContent" class="content">
+				<div class="range-type">
+					<a><img src="../img/ambientone.jpg"></a>
+					<h4>Windows</h4>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus, eveniet.</p>
+				</div>
+
+				<div class="range-type">
+					<a><img src="../img/doorsid.png"></a>
+					<h4>Doors</h4>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus, eveniet.</p>
+				</div>
+
+				<div class="range-type">
+					<a><img src="../img/c&sid.png"></a>
+					<h4>Commercial & Specialised</h4>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus, eveniet.</p>
+				</div>
+
+				<div class="range-type">
+					<img src="../img/glassid.png">
+					<h4>Glass</h4>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus, eveniet.</p>
+				</div>
+			</div>
+		</div>
+
+		<div id="ourSpecialWrapper" class="full-wrapper">
+			<img src="../img/shucoad.png">
+			<h4>Originated from Europe, the "Shuco" systems are new to Australia and offer unparalled class and sophistication.</h4>
+			<a><button>LEARN MORE</button></a>
+		</div>
+
+		<div id="ourLatestProjectsWrapper" class="full-wrapper">
+			<div id="collageHeading">
+				<h1>LATEST PROJECTS</h1>
+			</div>
+			<div id="collageCardOne" class="collage-card">
+
+			</div>
+			<div id="collageCardTwo" class="collage-card">
+			</div>
+			<div id="collageCardThree" class="collage-card">
+			</div>
+			<div id="collageCardFour" class="collage-card">
+			</div>
+			<div id="collageCardFive" class="collage-card">
+			</div>
+		</div>
+	</div>
+
+
+	<!-- JQuery Slider -->
+	<script src="../js/slider.js"></script>
+
+</body>
+
+<footer>
+
+	<div class="footer">
+		<div id="footerOurRange">
+			<h4>OUR RANGE</h4>
+			<ul>
+				<li><a>Windows</a></li>
+				<li><a>Doors</a></li>
+				<li><a>Commercial & Speciality</a></li>
+				<li><a>Facebook</a></li>
+				<li><a>Instagram</a></li>
+			</ul>
+		</div>
+		
+		<div id="footerAddressBox"> 
+			<div id="addressBoxContent" class="content">
+				<h1>9542 8255</h1>
+				<a><p>sales@lindsayalmondwindows.com.au</p></a>		
+			</div>
+
+			<div id="addressBoxLocation" class="location-map">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3306.502222069471!2d151.13032495078158!3d-34.030986134830854!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b12b806fcc00e4d%3A0xb262dfe7a61c7e44!2sUnit+3+Block+2%2F22+Northumberland+Rd%2C+Caringbah+NSW+2229!5e0!3m2!1sen!2sau!4v1529209031848" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+			</div>
+		</div>
+
+		<div id="contactUsForm" class="form">
+			<form>
+				<h4>CONTACT US</h4>
+				<p>Enquire any questions you may have about our business and/or our range.</p>
+				<input type="text" placeholder="Email"><br>
+				<input type="text" placeholder="Name"><br>
+				<textarea type="text" placeholder="" value="" name="enquiry" class="" id=""></textarea>
+				<input type="submit" class="button">
+			</form>
+		</div>
+
+		
+	</div>
+
+</footer>
+
+</html>
